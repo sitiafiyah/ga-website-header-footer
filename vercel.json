@@ -1,8 +1,10 @@
 {
-    "rewrites": [
-        {
-            "source": "/:path*",
-            "destination": "/:path*.html"
-        }
-    ]
+	"rewrites": [
+		{
+			"source": "/",
+			"destination": "/id/id/index.html"
+		}
+	],
+	"cleanUrls": true,
+	"trailingSlash": false
 }
