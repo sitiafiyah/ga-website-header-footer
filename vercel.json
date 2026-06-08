@@ -1,8 +1,9 @@
 {
-	"rewrites": [
+	"redirects": [
 		{
 			"source": "/",
-			"destination": "/id/id/index.html"
+			"destination": "/id/id",
+			"permanent": false
 		}
 	],
 	"cleanUrls": true,
