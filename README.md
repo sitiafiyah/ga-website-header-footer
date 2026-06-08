@@ -1,6 +1,35 @@
 # Garuda Indonesia Website Layout Base Version 1.0.1
 
-This project is a base layout for the Garuda Indonesia website. It provides a structured HTML layout for headers and footers in multiple languages, enabling a consistent design across different regions.
+This project is a foundational HTML implementation for the Garuda Indonesia website that integrates reusable Web Components for common layout sections, including the header and footer. By leveraging custom elements such as <ga-header> and <ga-footer>, the project promotes component reusability, consistency, and easier maintenance across multiple web pages and applications.
+
+## How to Use
+
+1. Clone the repository and checkout the required branch:
+   ```bash
+   git clone https://github.com/asyst-git/ga-website-html-layout-base.git
+   cd garuda-indonesia-layout-base
+   git clone -b header-footer-seabury-v3 
+2. Open the desired HTML file in a browser or serve the project using a local web server.
+   Access URL Format
+   To access the page correctly, the URL must follow the format below:
+
+   [domain]/{location}/{language}
+
+   Where:
+
+   location : Regional or country code (must be the first URL parameter).
+   language : Language code (must be the second URL parameter).
+
+   Examples:
+
+   https://example.com/id/en
+   https://example.com/id/id
+
+## Features
+
+- **Multi-language Support**: Headers and footers are available in multiple languages, including Indonesian, English, Dutch, Thai, Chinese, Korean, and Japanese.
+- **Responsive Design**: The layout is optimized for various screen sizes, ensuring a seamless user experience on both desktop and mobile devices.
+- **Reusable Components**: The project uses modular HTML components for headers and footers, making it easy to update and maintain.
 
 ## Live Demo
 
@@ -9,80 +38,67 @@ You can access the live version of the project at the following links:
 ### Main Website
 - [Main](https://garuda-indonesia-layout-base.vercel.app/)
 
-### Language-Specific Sections
-
-#### Indonesia
-- [Header](https://garuda-indonesia-layout-base.vercel.app/id/header)
-- [Footer](https://garuda-indonesia-layout-base.vercel.app/id/footer)
-
-#### English
-- [Header](https://garuda-indonesia-layout-base.vercel.app/en/header)
-- [Footer](https://garuda-indonesia-layout-base.vercel.app/en/footer)
-
-#### Dutch
-- [Header](https://garuda-indonesia-layout-base.vercel.app/nl/header)
-- [Footer](https://garuda-indonesia-layout-base.vercel.app/nl/footer)
-
-#### Thai
-- [Header](https://garuda-indonesia-layout-base.vercel.app/th/header)
-- [Footer](https://garuda-indonesia-layout-base.vercel.app/th/footer)
-
-#### Chinese
-- [Header](https://garuda-indonesia-layout-base.vercel.app/cn/header)
-- [Footer](https://garuda-indonesia-layout-base.vercel.app/cn/footer)
-
-#### Korean
-- [Header](https://garuda-indonesia-layout-base.vercel.app/ko/header)
-- [Footer](https://garuda-indonesia-layout-base.vercel.app/ko/footer)
-
-#### Japanese
-- [Header](https://garuda-indonesia-layout-base.vercel.app/jp/header)
-- [Footer](https://garuda-indonesia-layout-base.vercel.app/jp/footer)
-
-## Features
-
-- **Multi-language Support**: Headers and footers are available in multiple languages, including Indonesian, English, Dutch, Thai, Chinese, Korean, and Japanese.
-- **Responsive Design**: The layout is optimized for various screen sizes, ensuring a seamless user experience on both desktop and mobile devices.
-- **Reusable Components**: The project uses modular HTML components for headers and footers, making it easy to update and maintain.
-
 ## Project Structure
 
-The project is organized as follows:
-├── id/ 
-│ ├── header.html 
-│ ├── footer.html 
-├── en/ 
-│ ├── header.html 
-│ ├── footer.html 
-├── nl/ 
-│ ├── header.html 
-│ ├── footer.html 
-├── th/ 
-│ ├── header.html 
-│ ├── footer.html 
-├── cn/ 
-│ ├── header.html 
-│ ├── footer.html 
-├── ko/ 
-│ ├── header.html 
-│ ├── footer.html 
-├── jp/ 
-│ ├── header.html 
-│ ├── footer.html 
-├── styles/ 
-│ ├── app.css 
-│ ├── navbar.css 
-│ ├── footer.css 
-│ ├── modal.css 
-├── index.html 
+The project is organized based on location and language URL parameters using the following structure:
 
-## How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/asyst-git/ga-website-html-layout-base.git
-2. Navigate to the project directory:
-   ```bash
-   cd garuda-indonesia-layout-base
-3. Open the index.html file in your browser to view the main layout.
-4. To view specific language headers or footers, navigate to the respective HTML files in the browser or use the live links provided above.
+.
+├── id/
+│   ├── id/
+│   │   └── index.html
+│   └── en/
+│       └── index.html
+├── sg/
+│   └── en/
+│       └── index.html
+├── my/
+│   └── en/
+│       └── index.html
+├── au/
+│   └── en/
+│       └── index.html
+├── uk/
+│   └── en/
+│       └── index.html
+├── sa/
+│   └── en/
+│       └── index.html
+├── in/
+│   └── en/
+│       └── index.html
+├── oc/
+│   └── en/
+│       └── index.html
+├── jp/
+│   ├── ja/
+│   │   └── index.html
+│   └── en/
+│       └── index.html
+├── nl/
+│   ├── nl/
+│   │   └── index.html
+│   └── en/
+│       └── index.html
+├── kr/
+│   ├── ko/
+│   │   └── index.html
+│   └── en/
+│       └── index.html
+├── th/
+│   ├── th/
+│   │   └── index.html
+│   └── en/
+│       └── index.html
+├── cn/
+│   ├── cn/
+│   │   └── index.html
+│   └── en/
+│       └── index.html
+├── hk/
+│   ├── en/
+│   │   └── index.html
+│   └── zh/
+│       └── index.html
+└── qa/
+    └── en/
+        └── index.html
