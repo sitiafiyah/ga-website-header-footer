@@ -6,24 +6,25 @@ This project is a foundational HTML implementation for the Garuda Indonesia webs
 
 1. Clone the repository and checkout the required branch:
    ```bash
-   git clone https://github.com/asyst-git/ga-website-html-layout-base.git
+   git clone -b header-footer-seabury-v3 https://github.com/asyst-git/ga-website-html-layout-base.git
+   ```
+2. Navigate to the project directory:
+   ```bash
    cd garuda-indonesia-layout-base
-   git clone -b header-footer-seabury-v3 
-2. Open the desired HTML file in a browser or serve the project using a local web server.
+   ```
+3. Open the desired HTML file in a browser or serve the project using a local web server.
    Access URL Format
    To access the page correctly, the URL must follow the format below:
 
-   [domain]/{location}/{language}
+   https://domain.com/{location}/{language}
 
    Where:
-
-   location : Regional or country code (must be the first URL parameter).
-   language : Language code (must be the second URL parameter).
+   - location : Regional or country code (must be the first URL parameter).
+   - language : Language code (must be the second URL parameter).
 
    Examples:
-
-   https://example.com/id/en
-   https://example.com/id/id
+   - https://ga-website-header-footer.vercel.app/id/en
+   - https://ga-website-header-footer.vercel.app/id/id
 
 ## Features
 
@@ -36,12 +37,12 @@ This project is a foundational HTML implementation for the Garuda Indonesia webs
 You can access the live version of the project at the following links:
 
 ### Main Website
-- [Main](https://garuda-indonesia-layout-base.vercel.app/)
+- [Main](https://ga-website-header-footer.vercel.app/)
 
 ## Project Structure
 
 The project is organized based on location and language URL parameters using the following structure:
-
+```text
 .
 ├── id/
 │   ├── id/
@@ -100,5 +101,8 @@ The project is organized based on location and language URL parameters using the
 │   └── zh/
 │       └── index.html
 └── qa/
-    └── en/
-        └── index.html
+│   └── en/
+│       └── index.html
+└── script/
+    └── base.js
+```
