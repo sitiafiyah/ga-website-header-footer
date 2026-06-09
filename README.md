@@ -1,8 +1,31 @@
 # Garuda Indonesia Website Layout Base Version 1.0.1
 
-This project is a foundational HTML implementation for the Garuda Indonesia website that integrates reusable Web Components for common layout sections, including the header and footer. By leveraging custom elements such as <ga-header> and <ga-footer>, the project promotes component reusability, consistency, and easier maintenance across multiple web pages and applications.
+This project is a foundational HTML implementation for the Garuda Indonesia website that integrates reusable Web Components for common layout sections, including the header, sky-team and footer. By leveraging custom elements such as `<ga-header>`,`<ga-sky-team>` and `<ga-footer>`, the project promotes component reusability, consistency, and easier maintenance across multiple web pages and applications.
 
-## How to Use
+## How to Use Garuda Indonesia Web Components
+To use the shared Garuda Indonesia Web Components, include the required stylesheet and scripts in the `<head>` section of HTML document:
+
+ ```bash
+<link rel="stylesheet" href="https://www.garuda-indonesia.com/shared/web-components.css" />
+<script defer src="https://www.garuda-indonesia.com/shared/web-components.iife.js"></script>
+```
+
+Once the dependencies are loaded, we can add the available custom elements directly to your page:
+
+Available Components
+| Component | Description |
+|-----------|-------------|
+| `<ga-header>` | Displays the Garuda Indonesia website header navigation. |
+| `<ga-sky-team>` | Displays the SkyTeam section. |
+| `<ga-footer>` | Displays the Garuda Indonesia website footer. |
+
+## Features
+
+- **Multi-language Support**: Garuda Indonesia web components are available in multiple languages, including Indonesian, English, Dutch, Thai, Chinese, Korean, and Japanese.
+- **Responsive Design**: The layout is optimized for various screen sizes, ensuring a seamless user experience on both desktop and mobile devices.
+- **Reusable Components**: The project uses modular HTML components for headers, sky team and footers, making it easy to update and maintain.
+
+## How to Run Project
 
 1. Clone the repository and checkout the required branch:
    ```bash
@@ -25,12 +48,6 @@ This project is a foundational HTML implementation for the Garuda Indonesia webs
    Examples:
    - https://ga-website-header-footer.vercel.app/id/en
    - https://ga-website-header-footer.vercel.app/id/id
-
-## Features
-
-- **Multi-language Support**: Headers and footers are available in multiple languages, including Indonesian, English, Dutch, Thai, Chinese, Korean, and Japanese.
-- **Responsive Design**: The layout is optimized for various screen sizes, ensuring a seamless user experience on both desktop and mobile devices.
-- **Reusable Components**: The project uses modular HTML components for headers and footers, making it easy to update and maintain.
 
 ## Live Demo
 
